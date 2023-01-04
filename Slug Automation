@@ -1,0 +1,9 @@
+const config = input.config();
+
+const slug = 
+encodeURIComponent(config.slugName.toLowerCase()
+.replace(/\W/ig, '-'));
+
+const table = base.getTable ('Table 1');
+await table.updateRecordAsync(config.id,{
+'Slug': slug})
